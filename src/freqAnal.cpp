@@ -9,15 +9,11 @@ void process(string input)
 {
     map<char, uint> result;
 
-    for (size_t i = 0; i < input.size(); i++)
-    {
-        result[input[i]]++;
-    }
+    for (auto ch : input)
+        result[ch]++;
 
-    for_each(result.begin(), result.end(), [](auto el) 
-    {
+    for (auto el : result)
         cout << el.first << ": " << el.second << endl;
-    });
 }
 
 int main(int argc, char** argv)
