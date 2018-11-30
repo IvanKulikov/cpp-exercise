@@ -18,6 +18,6 @@ void process(string input)
 
 int main(int argc, char** argv)
 {
-    string in = "lksmdf;ojsaoofiomefoifomsa;odfm;oasidmc;oasdkmc;oiqej;ofkm;asokmdf";
-    process(in);
+    cout << argv[1] << endl;
+    process(argv[1]);
 }
